@@ -7,7 +7,8 @@ echo "PHP Functions Demonstration:<br><br>";
 echo "1. Defining and Calling Functions:<br>";
 
 // Function definition
-function greet($name) {
+function greet($name)
+{
     echo "Hello, $name!<br>";
 }
 
@@ -21,7 +22,8 @@ echo "<br>";
 echo "2. Default and Dynamic Arguments:<br>";
 
 // Function with default argument
-function greetWithDefault($name = "Guest") {
+function greetWithDefault($name = "Guest")
+{
     echo "Hello, $name!<br>";
 }
 
@@ -37,7 +39,8 @@ echo "<br>";
 echo "3. Return Values:<br>";
 
 // Function that calculates the square of a number and returns the result
-function square($number) {
+function square($number)
+{
     return $number * $number;
 }
 
@@ -51,7 +54,8 @@ echo "<br>";
 echo "4. Variable Scope:<br>";
 
 // Local variable example
-function localScopeExample() {
+function localScopeExample()
+{
     $localVar = 10; // Local variable
     echo "Local variable inside function: $localVar<br>";
 }
@@ -61,14 +65,16 @@ localScopeExample();
 
 // Global variable example
 $globalVar = 20; // Global variable
-function globalScopeExample() {
+function globalScopeExample()
+{
     global $globalVar; // Access global variable using 'global' keyword
     echo "Global variable inside function: $globalVar<br>";
 }
 globalScopeExample();
 
 // Static variable example
-function staticScopeExample() {
+function staticScopeExample()
+{
     static $staticVar = 0; // Static variable retains its value between function calls
     $staticVar++;
     echo "Static variable value: $staticVar<br>";
@@ -84,7 +90,7 @@ echo "5. Built-in PHP Functions:<br>";
 
 // Example: Using array_map to apply a function to each element of an array
 $numbers = [1, 2, 3, 4, 5];
-$squaredNumbers = array_map(function($num) {
+$squaredNumbers = array_map(function ($num) {
     return $num * $num;
 }, $numbers);
 echo "Squared numbers using array_map: " . implode(", ", $squaredNumbers) . "<br>";
@@ -99,4 +105,23 @@ $csv = "apple,banana,orange";
 $fruits = explode(",", $csv);
 echo "Fruits using explode: " . implode(", ", $fruits) . "<br>";
 
-?>
+//String functions
+$username = "Ritik Joshi";
+$phone = "123-456-7890";
+
+//$username = strtolower($username);
+//$username = strtoupper($username);
+//$username = trim($username);
+//$username = str_pad($username, 20, "0");
+//$phone = str_replace("-", "", $phone);
+//$username = strrev($username);
+//$username = str_shuffle($username);
+//$equals = strcmp($username, "Bro Code");
+//$count = strlen($phone);
+//$index = strpos($phone, "-");
+//$firstname = substr($username, 0, 3);
+//$lastname = substr($username, 4);
+//$fullname = explode(" ", $username);
+//$username = implode("-", $username);
+
+echo $username;
