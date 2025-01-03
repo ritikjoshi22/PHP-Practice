@@ -1,4 +1,11 @@
 <?php
+
+/*
+    Autoloading in PHP allows you to automatically load classes or interfaces without needing to manually include or require their files. This is especially useful in large projects where you might have multiple classes in separate files.
+
+    The spl_autoload_register() function is used to register a custom autoload function. Whenever a class is instantiated, this function is triggered to locate and include the required class file.
+*/  
+
 // Autoload Example Using spl_autoload_register
 
 // Step 1: Register a custom autoload function
