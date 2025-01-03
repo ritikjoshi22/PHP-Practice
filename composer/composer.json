@@ -1,0 +1,10 @@
+{
+    "name": "acer/composer",
+    "authors": [
+        {
+            "name": "ritikjoshi22",
+            "email": "joshster.ritik@gmail.com"
+        }
+    ],
+    "require": {}
+}
